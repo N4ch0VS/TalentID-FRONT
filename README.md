@@ -2,19 +2,49 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# TalentID
 
-This contains everything you need to run your app locally.
+AI-powered psychometric profiling application that generates talent profiles based on Enneagram test responses.
 
-View your app in AI Studio: https://ai.studio/apps/3661fc16-bad9-45ed-90e4-4d3159ea1180
+## Features
+
+- 20-question Enneagram-based psychometric test
+- AI-generated personality profiles with competencies
+- Bilingual support (English/Spanish)
+- Leadership style and cultural fit analysis
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
+   ```
+   npm install
+   ```
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
-   `npm run dev`
+   ```
+   npm run dev
+   ```
+
+## Testing
+
+Run all tests:
+```
+npm test
+```
+
+Test coverage:
+- L0: Unit tests (utils, types)
+- L1: Component tests (TalentForm)
+- L2: API integration tests
+- L3: E2E flow tests
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Jest + Testing Library
+- Google Gemini API
